@@ -2,7 +2,7 @@ import socket, sys
 
 try: 
     target = input("Enter IP to scan: ")
-    print(f"\nScanning {target} from port 1 to port 1024\n")
+    print(f"\nScanning {target} from port 20 to port 1023\n")
 
     for port in range (20, 1024):  # port range 20 - 1023
         openSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # create new socket object (IPv4, TCP)
@@ -16,3 +16,4 @@ except KeyboardInterrupt:  # ctrl + c to end the scan
     print("Scanning cancelled")
 
     sys.exit()
+
