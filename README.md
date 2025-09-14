@@ -1,5 +1,5 @@
 # port_scanner
-A script that scans ports 20 - 1024 of a specific IP address entered by the user
+A script that scans ports 20 - 1023 of a specific IP address entered by the user
 
 
 It starts by creating a new socket object, openSocket
